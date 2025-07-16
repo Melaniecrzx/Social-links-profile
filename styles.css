@@ -1,0 +1,103 @@
+@font-face {
+    font-family:"Inter";
+    src: url(assets/fonts/static/Inter-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family:"Inter";
+    src: url(assets/fonts/static/Inter-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family:"Inter";
+    src: url(assets/fonts/static/Inter-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%); 
+    --Grey900: hsl(0, 0%, 8%);
+}
+* {
+    margin: 0;
+    padding: 0; 
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--Grey900);
+    font-family: "Inter", sans-serif;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.social_profile {
+    max-width: 24rem;
+    width: 100%;
+    background-color: var(--Grey800);
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2.5rem;
+}
+.social_profile_picture {
+    display: block;
+    margin: auto;
+    width: 88px;
+    border-radius: 50%;
+    transition:  0.5s ease;
+}
+.social_profile_picture:hover {
+    transform: scale(1.5);
+}
+.social_title {
+    font-size: 1.5rem;
+    line-height: 150%;
+    color: var(--White);
+    font-weight: 700; 
+    margin-bottom: 0.25rem
+}
+.social_description {
+    font-size: 0.875rem;
+    line-height: 150%;
+    color: var(--Green);
+    font-weight: 600;
+}
+.social_bio {
+    font-size: 0.875rem;
+    line-height: 150%;
+    color: var(--White);
+    font-weight: 400;
+}
+.social_links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.social_links a {
+    text-decoration: none;
+    color: var(--White);
+    background-color: var(--Grey700);
+    padding: 0.75rem 0;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 150%;
+    transition: all 0.5s ease;;
+}
+.social_links a:hover {
+    background-color: var(--Green);
+    color: var(--Grey700);
+    cursor: pointer;
+}
