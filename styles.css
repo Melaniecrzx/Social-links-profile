@@ -1,19 +1,7 @@
 @font-face {
     font-family:"Inter";
-    src: url(assets/fonts/static/Inter-Regular.ttf) format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family:"Inter";
-    src: url(assets/fonts/static/Inter-SemiBold.ttf) format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family:"Inter";
-    src: url(assets/fonts/static/Inter-Bold.ttf) format('truetype');
-    font-weight: 700;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+    font-weight: 100 900;
     font-style: normal;
 }
 :root {
@@ -78,7 +66,7 @@ body {
     font-size: 0.875rem;
     line-height: 150%;
     color: var(--White);
-    font-weight: 400;
+    font-weight: 900;
 }
 .social_links {
     display: flex;
